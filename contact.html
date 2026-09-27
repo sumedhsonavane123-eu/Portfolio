@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Sumedh Sonavane</title>
+<meta name="description" content="Get in touch with Sumedh Sonavane about policy, public affairs, and advocacy opportunities." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">sumedh<span>.</span>sonavane</a>
+  <div class="nav-links nav-links-desktop">
+    <a href="experience/index.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="publications.html">Publications</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="contact.html" class="btn btn-outline">Get in touch</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="experience/index.html">Experience</a>
+  <a href="education.html">Education</a>
+  <a href="publications.html">Publications</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="availability-badge reveal is-visible" style="margin-bottom:1.5rem;">Open to policy &amp; public affairs opportunities</span>
+    <h1 class="reveal is-visible">Let's talk about policy, advocacy, or a collaboration.</h1>
+    <p class="reveal is-visible">Fill out the form below or reach out directly. I aim to reply within a few days.</p>
+  </div>
+</header>
+
+<section style="padding-top:2rem;">
+  <div class="container contact-grid">
+    <form class="reveal" id="contact-form">
+      <div class="form-field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-field">
+        <label for="org">Organisation (if applicable)</label>
+        <input type="text" id="org" name="org" />
+      </div>
+      <div class="form-field">
+        <label for="reason">Reason for contact</label>
+        <select id="reason" name="reason">
+          <option>Job or internship opportunity</option>
+          <option>Research or advocacy collaboration</option>
+          <option>Speaking / panel invitation</option>
+          <option>Press or media enquiry</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message <span class="btn-arrow">→</span></button>
+      <!-- This form has no backend wired up yet. To make it functional, connect
+           it to a service like Formspree, Basin, or your own endpoint via the
+           form's action/method attributes, or handle submission with fetch()
+           in js/main.js. -->
+      <p class="form-note">I aim to reply within a few days.</p>
+    </form>
+
+    <div class="contact-side reveal">
+      <div class="contact-info-block">
+        <h4>Email</h4>
+        <a href="mailto:sumedhsonavane123@gmail.com">sumedhsonavane123@gmail.com</a>
+      </div>
+      <div class="contact-info-block">
+        <h4>University email</h4>
+        <a href="mailto:ssonavane@hs-mittweida.de">ssonavane@hs-mittweida.de</a>
+      </div>
+      <div class="contact-info-block">
+        <h4>Phone</h4>
+        <a href="tel:+4915566030578">+49 155 66030578</a>
+      </div>
+      <div class="contact-info-block">
+        <h4>Based in</h4>
+        <p>Mittweida, Germany (originally from Mumbai, India)</p>
+      </div>
+      <div class="contact-info-block">
+        <h4>Best for</h4>
+        <p>Policy, public affairs, and advocacy roles or collaborations, EU institutions, NGOs, and civil society organisations.</p>
+      </div>
+      <div class="contact-info-block">
+        <h4>Elsewhere</h4>
+        <a href="https://www.linkedin.com/in/sumedh-sonavane-eu" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="nav-logo">sumedh<span>.</span>sonavane</a>
+        <p style="color:var(--fg-muted); margin-top:1rem; max-width:26ch;">EU Policy Advisor &amp; Public Affairs, youth-led diplomacy and institutional impact.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="experience/index.html">Experience</a>
+          <a href="education.html">Education</a>
+          <a href="publications.html">Publications</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:sumedhsonavane123@gmail.com">sumedhsonavane123@gmail.com</a>
+          <a href="https://www.linkedin.com/in/sumedh-sonavane-eu" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sumedh Sonavane.</span>
+      <span>Germany</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
