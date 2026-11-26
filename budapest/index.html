@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="gold">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Budapest — The Pearl of the Danube | Visitor Guide</title>
+<meta name="description" content="An immersive visitor guide to Budapest: landmarks, thermal baths, ruin bars, food, 1-3 day itineraries, transport, money and survival Hungarian.">
+<meta name="theme-color" content="#070b16">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <a class="logo" href="#top">Buda<b>pest</b></a>
+  <ul id="menu"><li><a href="#sights">Sights</a></li><li><a href="#districts">Buda &amp; Pest</a></li><li><a href="#plan">Itineraries</a></li><li><a href="#eat">Eat &amp; Drink</a></li><li><a href="#know">Know Before You Go</a></li><li><a href="#speak">Speak Hungarian</a></li></ul>
+  <div style="display:flex;gap:12px;align-items:center">
+    <div class="toggle" role="group" aria-label="Time of day"><button data-m="gold" class="on">Golden hour</button><button data-m="night">Night</button></div>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="art" id="heroArt" data-scene="parliament" data-photo="hero"></div>
+  <div class="wrap">
+    <div class="eyebrow">Visitor guide · Hungary</div>
+    <h1>Two cities. One river. <em>Endless</em> nights.</h1>
+    <p class="lead">Thermal baths under baroque domes, castle terraces above the Danube, café palaces and candle-lit ruin bars. Everything you need to see Budapest properly.</p>
+    <a class="btn" href="#sights">Explore the city</a><a class="btn ghost" href="#plan">Plan my trip</a>
+  </div>
+  <div class="scroll">Scroll</div>
+</header>
+
+<div class="stats"><div class="wrap">
+  <div class="stat"><b>1873</b><span>Buda, Óbuda &amp; Pest unite as one city</span></div>
+  <div class="stat"><b>1896</b><span>Metro Line 1 opens, the oldest on the European continent</span></div>
+  <div class="stat"><b>1987</b><span>Danube banks &amp; Castle District join UNESCO World Heritage</span></div>
+  <div class="stat"><b>120+</b><span>thermal springs beneath the city</span></div>
+</div></div>
+
+<section id="sights"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Twelve essentials</div><h2>What you came for</h2><p>Tap any place for the history, practical details and an insider tip.</p></div>
+  <div class="chips rv" id="chips"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="districts" style="background:var(--bg2)"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Know the layout</div><h2>Buda is hills. Pest is pulse.</h2><p>The Danube splits the city in two, and the two halves feel completely different.</p></div>
+  <div class="rv">
+  <div class="split">
+    <div class="half buda"><small>West bank</small><h3>Buda</h3><p style="color:#d7dae5;margin-top:10px">Green hills, old streets and castle views. Quieter, more residential, and best at sunrise or sunset.</p>
+      <ul><li><b>Castle District</b> (I): Matthias Church, Fisherman's Bastion, the palace</li><li><b>Gellért Hill</b> (XI): the Citadella and the best panorama</li><li><b>Víziváros</b> (I/II): riverside cafés below the castle</li><li><b>Óbuda</b> (III): Roman ruins and a village feel</li></ul></div>
+    <div class="half pest"><small>East bank</small><h3>Pest</h3><p style="color:#d7dae5;margin-top:10px">Flat, grand and loud. Boulevards, markets, theatres, cafés and nearly all the nightlife are here.</p>
+      <ul><li><b>District V</b>: Parliament, the Basilica, Váci utca</li><li><b>District VII</b>: the Jewish Quarter, ruin bars, street food</li><li><b>Andrássy út</b> (VI): UNESCO boulevard of the Opera and mansions</li><li><b>City Park</b> (XIV): Heroes' Square, Széchenyi Baths, Vajdahunyad Castle</li></ul></div>
+  </div><div class="river">~ The Danube ~</div></div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Plan it</div><h2>Your days, sorted</h2><p>Three tried routes that cut walking and queues. Pick the length of your stay.</p></div>
+  <div class="tabs rv" id="tabs"><button class="on" data-d="1">1 day</button><button data-d="2">2 days</button><button data-d="3">3 days</button></div>
+  <div class="tl rv" id="tl"></div>
+</div></section>
+
+<section id="eat" style="background:var(--bg2)"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Taste Hungary</div><h2>Eat like you mean it</h2><p>Hungarian food is rich, paprika-warm and generous. Come hungry, and leave room for cake.</p></div>
+  <div class="eat rv" id="eatGrid"></div>
+</div></section>
+
+<section id="know"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Know before you go</div><h2>The practical stuff</h2><p>Details like prices and opening hours change. Treat figures as a guide and confirm on official sites before you travel.</p></div>
+  <div class="pract rv" id="pract"></div>
+  <div style="height:90px"></div>
+  <div class="sec-head rv"><div class="eyebrow">When to visit</div><h2>Every season has a Budapest</h2></div>
+  <div class="season rv"><div class="sb" id="sb"></div><div class="sp" id="sp"></div></div>
+</div></section>
+
+<section id="speak" style="background:var(--bg2)"><div class="wrap">
+  <div class="sec-head rv"><div class="eyebrow">Survival Hungarian</div><h2>Say it, and watch them smile</h2><p>Hungarian is famously hard, so locals love any effort. Tap a phrase to copy it. Most people in tourist areas speak English.</p></div>
+  <div class="phr rv" id="phr"></div>
+  <div class="note rv"><b>Good to know:</b> Hungarians put the family name first, as in "Kovács János". "Szia" (see-ya) is a casual hello <i>and</i> goodbye. Use "Jó napot" (good day) with strangers.</div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><h5>Budapest</h5><p>An independent visitor guide. Not affiliated with any tourism authority.<br>Check official sources (BKK, venue sites) for current prices, hours and closures.</p></div>
+  <div><p><b style="color:var(--ink)">Emergency:</b> 112 (EU-wide)<br><b style="color:var(--ink)">Tourist info:</b> visitbudapest.travel<br><b style="color:var(--ink)">Transport:</b> bkk.hu · BudapestGO app</p></div>
+</div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true"><button class="close" id="mclose" aria-label="Close">×</button><div class="sheet" id="sheet"></div></div>
+
+<script src="scenes.js"></script>
+<script src="app.js"></script>
+</body></html>
