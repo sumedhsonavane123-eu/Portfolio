@@ -7,11 +7,11 @@
     el.innerHTML = window.SCENES[scene]('s' + uid++);
     if (!photo) return;
     const img = new Image();
-    img.className = 'photo'; img.alt = el.firstChild.getAttribute('aria-label') || ''; img.decoding = 'async'; img.loading = 'lazy';
+    img.className = 'photo'; img.alt = el.firstChild.getAttribute('aria-label') || ''; img.decoding = 'async'; img.loading = photo === 'hero' ? 'eager' : 'lazy';
     img.sizes = '(min-width:1600px) 3840px, (min-width:900px) 2560px, 1600px';
     img.srcset = `images/${photo}-1600.jpg 1600w, images/${photo}-2560.jpg 2560w, images/${photo}-3840.jpg 3840w`;
     img.src = `images/${photo}.jpg`;
-    img.onload = () => img.classList.add('ok');
+    img.onload = () => { img.classList.add('ok'); const h = el.closest('.hero'); if (h) h.classList.add('has-photo'); };
     img.onerror = () => img.remove();
     el.appendChild(img);
   }
